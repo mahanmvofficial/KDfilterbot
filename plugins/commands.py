@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 join_db = JoinReqs
 
-@Client.on_message(filters.command("start") & filters.incoming)
+@Client.on_message(filters.command("mahan") & filters.incoming)
 async def start(client, message):
     try:
         await message.react(emoji=random.choice(REACTIONS), big=True)
