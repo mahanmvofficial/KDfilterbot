@@ -70,7 +70,6 @@ async def answer(bot, query):
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
-        if f_caption is None:
             f_caption = (
             f"{clean_file_name}\n\n"
             "✯ ━━━━━ ✧ ━━━━━━ ✯\n"
